@@ -11,7 +11,7 @@ const Hero = ({ id }) => {
 	};
 
 	return (
-		<div className="container" id={id} style={{ backgroundImage:`url(${bg})`, height: '100vh', backgroundPosition: 'center', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
+		<div className="container" id={id} style={{ backgroundImage:`url(${bg})`, backgroundPosition: 'center', backgroundSize: 'cover', marginTop: '-5em' }}>
 			<Navbar toggle={toggle}></Navbar>
 			<Sidebar show={show} toggle={toggle}></Sidebar>
 			<div className="content">
