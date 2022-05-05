@@ -1,0 +1,101 @@
+.sideContainer{
+	position: fixed;
+	z-index: 100;
+	width: 350px;
+	height: 100%;
+	background: radial-gradient(circle, rgba(21,43,115,1) 6%, rgba(58,52,21,1) 33%, rgba(10,10,10,1) 45%, rgba(53,17,31,1) 59%, rgba(64,1,71,1) 87%, rgba(247,242,244,1) 100%);
+	display: grid;
+	align-items: center;
+	top: 0;
+	transition: left 0.3s ease-in-out;
+	left: -500px;
+}
+
+.sideContainer.show{
+  left:0;
+}
+@media screen and (max-width: 400px) {
+  .sideContainer{
+    width: 100%;
+  }
+}
+
+/* export const CloseIcon = styled(FaTimes){
+	color: #000;
+} */
+
+.close{
+	position: absolute;
+	top: 1.2rem;
+	right: 2rem;
+	background: transparent;
+	border: transparent;
+	font-size: 2rem;
+	font-weight: bolder;
+	cursor: pointer;
+	outline: none;
+	color: pink;
+  transition: transform 0.5s ease-in;
+}
+.close:hover{
+  transform: scale(1.2);
+	color: deeppink;
+}
+
+.sideMenu{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 80px);
+	text-align: center;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .sideMenu {
+    grid-template-rows: repeat(4, 60px);
+  }
+}
+
+.sideLink{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	text-decoration: none;
+	list-style: none;
+	transition: 0.2s ease-in-out;
+	color: cornflowerblue;
+	cursor: pointer;
+}
+
+.sideLink:hover {
+  color: cyan;
+  transition: 0.2s ease-in-out;
+}
+
+.btnWrap{
+	display: flex;
+	justify-content: center;
+  margin-top: 3rem;
+}
+
+.sideRoute{
+	background: navy;
+	white-space: nowrap;
+	border-radius: 15px;
+	padding: 16px 64px;
+	color: turquoise;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	text-decoration: none;
+}
+
+.sideRoute:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.1);
+	color: navy;
+	background-color: turquoise;
+}

@@ -1,0 +1,59 @@
+
+.navbar{
+	/* background: black; */
+	background: 'transparent';
+	height: 80px;
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	font-weight: 700;
+	position: fixed;
+	transition: transform 1000ms;
+}
+
+.navbar.move{
+  transform: translateY(-200px);
+}
+
+.navlink{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.desktop span>img {
+	height: 6.5vh;
+	width: 5.5vw;
+}
+
+.desktop span>b {
+	font-size: 3rem;
+	color: lawngreen;
+}
+
+@media screen and (max-width: 530px) {
+  .navlink {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+  }
+
+	.desktop{
+		display:none;
+	}
+}
+
+.navicon{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	color: pink;
+	transform: translate(100%, 50%);
+	font-weight: bold;
+	font-size: 2rem;
+};
+
+

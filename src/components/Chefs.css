@@ -1,0 +1,18 @@
+.chefImg{
+	height: 300px;
+	border-bottom: solid 9px palevioletred;
+	border-top: solid 5px lawngreen;
+  width: 300px;
+  object-fit: cover;
+}
+
+.chefContainer{
+	min-height: 100vh;
+	padding: 5rem calc((100vw - 1300px) / 2);
+	background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../images/kitchen.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: fuchsia;
+}
