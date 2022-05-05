@@ -5,7 +5,6 @@ import Sidebar from './Sidebar';
 
 const Hero = () => {
 	const [show, setShow] = useState(false);
-
 	const toggle = () => {
 		setShow(!show);
 	};
