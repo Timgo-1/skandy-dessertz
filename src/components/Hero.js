@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import './Hero.css';
 import Sidebar from './Sidebar';
+import bg from '../images/restaurant-1.png';
 
-const Hero = () => {
+const Hero = ({ id }) => {
 	const [show, setShow] = useState(false);
 	const toggle = () => {
 		setShow(!show);
 	};
 
 	return (
-		<div className="container">
+		<div className="container" id={id} style={{ backgroundImage:`url(${bg})`, height: '100vh', backgroundPosition: 'center', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
 			<Navbar toggle={toggle}></Navbar>
 			<Sidebar show={show} toggle={toggle}></Sidebar>
 			<div className="content">

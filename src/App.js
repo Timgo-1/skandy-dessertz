@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
 	return (
 		<Router>
-			<Hero></Hero>
+			<Hero id="home"></Hero>
 			<Cakes id="menu"></Cakes>
 			<Favorite id="favorite"></Favorite>
 			<Chefs id="staff"></Chefs>

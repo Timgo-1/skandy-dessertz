@@ -6,7 +6,7 @@ import favorite from '../images/favourite.jpg';
 const Favorite = ({ id }) => {
 	return (
 		<div className="favContainer" id={id}>
-			<h2>Our favorite</h2>
+			<h2>Our Favorite</h2>
 
 			<div className="favContent">
 				<Slide left>
